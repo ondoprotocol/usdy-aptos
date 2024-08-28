@@ -1,0 +1,13 @@
+[package]
+name = "usdy"
+version = "1.0.1"
+upgrade_policy = "compatible"  # compatible or immutable
+
+[addresses]
+# Assign an address for the module to live under. Must always be the sender (alias "_")
+usdy = "0xcfea864b32833f157f042618bd845145256b1bf4c0da34a7013b76e42daa53cc"
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "mainnet"
+subdir = "aptos-move/framework/aptos-framework"
